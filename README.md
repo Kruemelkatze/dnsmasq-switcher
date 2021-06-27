@@ -84,7 +84,7 @@ The following steps assume the repository to be under `~/dnsmasq-switcher`.
 
     ```
     sudo chown USER /etc/dnsmasq.conf*
-    sudo chrp USER /etc/dnsmasq.conf*
+    sudo chgrp USER /etc/dnsmasq.conf*
     ```
 
 6. Allow the user to restart _dnsmasq_ without PW prompt by adding this to the _sudoers_ file.
