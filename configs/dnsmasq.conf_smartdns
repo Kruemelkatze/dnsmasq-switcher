@@ -1,0 +1,10 @@
+interface=eth0
+listen-address=0.0.0.0
+
+# Don't know if these settings actually work
+max-cache-ttl=0
+max-ttl=0
+
+#smartdns
+# replace 8.8.8.8 with your SmartDNS ip!
+server=/#/8.8.8.8

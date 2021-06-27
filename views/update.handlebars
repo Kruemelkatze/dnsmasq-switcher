@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>Update SmartDNS IP</h1>
+
+    {{#ifEquals mode "default"}}
+        <p>SmartDNS mode currently not active!</p>
+    {{/ifEquals}}
+
+<form action="updatesmartdnsip" method="POST">
+        <input name="smartdnsip" id="smartdnsip" type="text" required value ="{{ip}}"pattern="((^|\.)((25[0-5])|(2[0-4]\d)|(1\d\d)|([1-9]?\d))){4}$">                       
+        <input type="submit" class="btn btn-secondary" value="Update IP" /></form>
+</form>
+
+</div>

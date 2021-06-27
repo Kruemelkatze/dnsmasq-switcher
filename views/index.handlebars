@@ -1,0 +1,22 @@
+<div class="container" style="text-align: center;">
+    <div class="row justify-content-center">
+        <div class="col-md-4 align-self-center">
+            <h1>SmartDNS Switcher</h1>
+            <h3>Current Mode:<br>{{mode}}<br><sub class="text-muted">@{{ip}}</sub></h2>
+
+        </div>
+    </div>
+    <div class="row justify-content-center" style="margin-top: 30px">
+        <div class="col" style="text-align: right;">
+            <form action="./switch" method="POST">
+                <input type="hidden" name="target" value="reset" />
+                <input type="submit" class="btn btn-dark btn-primary" value="Reset" />
+            </form>
+        </div>
+        <div class="col" style="text-align: left;">
+            <form action="./switch" method="POST">
+                <input type="hidden" name="target" value="smartdns" />
+                <input type="submit" class="btn btn-dark" value="SmartDNS" /></form>
+        </div>
+    </div>
+</div>
