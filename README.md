@@ -121,7 +121,7 @@ The following steps assume the repository to be under `~/dnsmasq-switcher`.
 4. Test-start the application.
 
     ```bash
-        node index.js
+    node index.js
     ```
 
     The output should be like this:
@@ -137,26 +137,26 @@ The following steps assume the repository to be under `~/dnsmasq-switcher`.
 5. Create systemd file to automatically start it after booting.
 
     ```bash
-        sudo nano /lib/systemd/system/dnsmasq-switcher.service
+    sudo nano /lib/systemd/system/dnsmasq-switcher.service
     ```
 
     File content. Be sure to replace NODEPATH with the path returned by `whereis node`.
 
     ```conf
-        [Unit]
-        Description=DNS Switcher for SmartDNS
-        After=network.target
+    [Unit]
+    Description=DNS Switcher for SmartDNS
+    After=network.target
 
-        [Service]
-        Environment=NODE_PORT=5000
-        Environment=NODE_ENV=production
-        Type=simple
-        User=pi
-        ExecStart=NODEPATH /home/USER/dnsmasq-switcher/index.js
-        Restart=on-failure
+    [Service]
+    Environment=NODE_PORT=5000
+    Environment=NODE_ENV=production
+    Type=simple
+    User=pi
+    ExecStart=NODEPATH /home/USER/dnsmasq-switcher/index.js
+    Restart=on-failure
 
-        [Install]
-        WantedBy=multi-user.target
+    [Install]
+    WantedBy=multi-user.target
     ```
 
 6. Enable service and start it
