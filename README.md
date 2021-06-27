@@ -87,16 +87,17 @@ The following steps assume the repository to be under `~/dnsmasq-switcher`.
     sudo chgrp USER /etc/dnsmasq.conf*
     ```
 
-6. Allow the user to restart _dnsmasq_ without PW prompt by adding this to the _sudoers_ file.
+6. Allow the user to reload and restart _dnsmasq_ without PW prompt by adding this to the _sudoers_ file.
 
     ```bash
     sudu visudo
     ```
 
-    Add this line (be sure to replace USER):
+    Add these lines (be sure to replace USER):
 
     ```conf
     %USER     ALL=NOPASSWD:/usr/bin/systemctl reload dnsmasq.service
+    %USER     ALL=NOPASSWD:/usr/bin/systemctl restart dnsmasq.service
     ```
 
 7. Reboot
