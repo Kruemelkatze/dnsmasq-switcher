@@ -23,6 +23,8 @@ On most smart TVs, you can't install VPN apps. For phones and computers, you don
 
 This was my initial idea and is much more common and easy. But this way, you can only enable/disable the VPN for your whole network, re-routing all network traffic of all devices. But I want to watch US series on the TV while also gaming without VPN.
 
+But you can also combine this system with a VPN! I use it in combination with a network-wide VPN that is set to a location in my home country (for privacy) and I can still watch US series.
+
 ### What do I need for SmartDNS?
 
 You need a SmartDNS ip that is bound to your own public IPv4 address. Your VPN provider (I use _Surfshark_) most likely has a page or tutorial for this.
@@ -173,5 +175,3 @@ You can then browse to [http://DNSHOST:5000](http://DNSHOST:5000) and switch bet
 You can **update the SmartDNS ip** via the form at [http://DNSHOST:5000/update](http://DNSHOST:5000/update). You have to switch the mode afterwards for it to work.
 
 [<img width="300" alt="DNS switching app on phone" src="public/phone_img.jpg"/>](public/phone_img.jpg)
-
-
