@@ -128,7 +128,7 @@ The following steps assume the repository to be under `~/dnsmasq-switcher`.
     The output should be like this:
 
     ```bash
-    USER@raspberrypi:~/dnsmasq-switcher $ node index.js
+    USER@HOST:~/dnsmasq-switcher $ node index.js
     DNS Switcher listening at http://localhost:5000
     Environment: production
     ```
@@ -152,7 +152,7 @@ The following steps assume the repository to be under `~/dnsmasq-switcher`.
     Environment=NODE_PORT=5000
     Environment=NODE_ENV=production
     Type=simple
-    User=pi
+    User=USER
     ExecStart=NODEPATH /home/USER/dnsmasq-switcher/index.js
     Restart=on-failure
 
