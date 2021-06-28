@@ -29,6 +29,10 @@ But you can also combine this system with a VPN! I use it in combination with a 
 
 You need a SmartDNS IP that is bound to your own public IPv4 address. Your VPN provider (I use _Surfshark_) most likely has a page or tutorial for this.
 
+### Can't I just set the SmartDNS IP as DNS on my device(s) manually?
+
+Sure! But on most devices, setting the DNS is quite cumbersome, even more so if you only have a standard TV remote. Why not do it with just a single button press?
+
 ### It looks complicated.
 
 It certainly is, but it works.
@@ -104,7 +108,7 @@ The following steps assume the repository to be under `~/dnsmasq-switcher`.
 
 ### Web application setup
 
-1. Install *nodejs* (I used NVM). They have great tutorials on this.
+1. Install _nodejs_ (I used NVM). They have great tutorials on this.
 
 2. Install dependencies of the app
 
